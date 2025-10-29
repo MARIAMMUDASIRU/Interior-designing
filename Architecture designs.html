@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Architecture 🏡</title>
+    <style>
+      body {
+        background-color: #452413;
+        text-align: center;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 45px;
+      }
+
+      p1 {
+        font-size: 30px;
+      }
+
+      p2 {
+        font-size: large;
+        font-weight: 200;
+      }
+
+      em {
+        font-size: 30px;
+      }
+
+      img:hover {
+        transform: scale(1.2) rotate(360deg);
+        transition: all 300ms ease-in-out;
+      }
+      .first {
+        display: block;
+        margin: 0 auto;
+        max-width: 70%;
+        border-radius: 30px;
+      }
+
+      .first:hover {
+        transition: ease-out;
+      }
+
+      .second {
+        display: block;
+        margin: 0 auto;
+        max-width: 50%;
+        height: auto;
+        border-radius: 30px;
+      }
+
+      .third {
+        display: block;
+        margin: 0 auto;
+        max-width: 70%;
+        height: auto;
+        border-radius: 30px;
+      }
+
+      .fourth {
+        display: block;
+        margin: 0 auto;
+        max-width: 200%;
+        height: auto;
+        border-radius: 30px;
+      }
+
+      .one {
+        padding: 10px;
+        border-radius: 30px;
+        font-size: 20px;
+      }
+
+      .one :hover {
+        color: #4f3439;
+        background: #aa8873;
+        cursor: pointer;
+      }
+
+      .two {
+        padding: 10px;
+        border-radius: 30px;
+      }
+
+      .two :hover {
+        color: #4f3439;
+        background: #aa8873;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Hi, Welcome to <strong><em>WOODS AND BRICKS</em></strong>
+    </h1>
+    <p1>
+      At Woods and Bricks, we create inspiring spaces that enhance
+      life—residential, commercial, or community-focused—driven by passion and
+      innovation. </p1
+    ><br ><br ><br ><br >
+    <div>
+      <img
+        class="first"
+        src="https://thearchitectsdiary.com/wp-content/uploads/2023/02/Arch2O-architectural-sketching-10-architecture-sketching-tips-1-1024x585.jpg"
+        alt="building plan"
+      />
+    </div>
+    <br /><br /><br />
+    <button class="one"><em>Our Vision</em></button>
+
+    <br /><br /><br />
+    <p2
+      >At Woods and Bricks, we believe architecture transcends mere structures;
+      it’s about crafting inspiring spaces that enhance our lives and
+      interactions. Our dedication to design shines through in every project,
+      from residential retreats to vibrant commercial hubs and community-centric
+      public spaces. We strive to create aesthetically pleasing, bespoke designs
+      that are both practical and innovative, ensuring every environment we
+      shape fosters connection and creativity. Join us in exploring how our
+      passion for architecture can transform your vision into reality. </p2
+    ><br />
+    <h3>
+      <a
+        href="https://illustrarch.com/articles/architectural-technology/25278-the-rise-of-smart-homes-in-modern-architecture.html"
+        target="_blank"
+      >
+        learn more
+      </a>
+    </h3>
+    <h2><em>WHAT WE OFFER</em></h2>
+    <br /><br />
+    <p3
+      ><img
+        class="second"
+        src="https://illustrarch.com/wp-content/uploads/2024/10/Biophilic_Architecture_minimalist-4-min.png"
+        alt="sustainable design solutions"
+      />
+      <br /><br /><br /><em
+        >SUSTAINABLE / ECO-FRIENDLY DESIGN SOLUTIIONS</em
+      > </p3
+    ><br /><br /><br /><br /><br />
+    <p4
+      ><img
+        class="third"
+        src="https://www.maidenheadplanning.co.uk/image/adobestock-589990306.webp?size=600&constrain=16x9&quality=70"
+        alt="smart technological solutions"
+      />
+    </p4>
+    <br /><br /><em>SMART TECHNOLOGICAL SOLUTIONS</em><br /><br /><br /><br />
+    <p5
+      ><img
+        class="fourth"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA_DdDmdHMebo-KRn60Mp0wrYKtyOptwQtQw&s"
+        alt="innovative design solutions"
+      /><br /><em>INNOVATIVE DESIGN SOLUTIONS</em> </p5
+    ><br /><br /><br /><br /><br />
+    <button class="two">Contact Us</button>
+    <br /><br /><br />Follow Us On Instagram! <br />This page was built by
+    <a href="https://www.instagram.com/mimi_mudasir/">Mariam Mudasiru</a>
+    <script>
+      function ourVision() {
+        alert(
+          "We envision a world where architecture harmonizes with nature and culture, where every structure tells a story and serves its purpose beautifully. Our team of experienced architects and designers is dedicated to pushing the boundaries of creativity while ensuring functionality and sustainability."
+        );
+      }
+
+      let visionButton = document.querySelector(".one");
+      visionButton.addEventListener("click", ourVision);
+
+      function contactUs() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+
+        let h1 = document.querySelector("h1");
+        h1.innerHTML = "<em>Thank you</em> " + name + " hope to see you again";
+      }
+
+      let contactButton = document.querySelector(".two");
+
+      contactButton.addEventListener("click", contactUs);
+    </script>
+  </body>
+</html>
